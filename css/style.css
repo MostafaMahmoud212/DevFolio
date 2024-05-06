@@ -1,0 +1,264 @@
+:root {
+  --main-color: rgb(0, 120, 255);
+}
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+/* start Home */
+header.vh-100 {
+  background-image:  linear-gradient(#00000092, #00000092) , url("../images/hero-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+nav {
+  background-color: #000000c7;
+}
+.nav-item .nav-link.active span {
+  width: 60%;
+}
+.nav-item .nav-link span {
+  position: absolute;
+  display: flex;
+  height: 2px;
+  width: 0px;
+  bottom: 5px;
+  left: 10px;
+  background-color: #fff;
+  transition: .7s;
+} 
+.nav-item .nav-link:hover span {
+  width: 60%;
+} 
+.navbar-collapse.collapse.show {
+  background-color: #fff;
+  color: #333;
+}
+.navbar-collapse.collapse.show .active {
+  color: var(--main-color);
+}
+.navbar-collapse.collapse.show a {
+  color: #333;
+}
+.navbar-collapse.collapse.show a:hover {
+  color: var(--main-color);
+}
+.head-h {
+  font-size: 40px;
+  font-weight: bold;
+}
+.animat::after {
+  content: "P|";
+  animation: type 10s infinite;
+}
+@keyframes type{
+  0% {content: "|"; }
+  2% {content: "D|";}
+  4% {content: "De|";}
+  6% {content: "Des|";}
+  8% {content: "Desi|";}
+  10% {content: "Desig|";}
+  12% {content: "Design|";}
+  14% {content: "Designe|";}
+  16% {content: "Designer|";}
+  18% {content: "Designe|";}
+  20% {content: "Design|";}
+  22% {content: "Desig|";}
+  24% {content: "Desi|";}
+  26% {content: "Des|";}
+  28% {content: "De|";}
+  30% {content: "Dev|";}
+  32% {content: "Deve|";}
+  34% {content: "Devel|";}
+  36% {content: "Develo|";}
+  38% {content: "Develop|";}
+  40% {content: "Develope|";}
+  42% {content: "Developer|";}
+  44% {content: "Develop|";}
+  46% {content: "Devel|";}
+  48% {content: "Dev|";}
+  50% {content: "D|";}
+  52% {content: "F|";}
+  54% {content: "Fr|";}
+  56% {content: "Fre|";}
+  58% {content: "Free|";}
+  60% {content: "Freel|";}
+  62% {content: "Freela|";}
+  64% {content: "Freelan|";}
+  66% {content: "Freelanc|";}
+  68% {content: "Freelance|";}
+  70% {content: "Freelancer|";}
+  72% {content: "Freelanc|";}
+  74% {content: "Freela|";}
+  76% {content: "Free|";}
+  78% {content: "Fr|";}
+  80% {content: "P";}
+  82% {content: "Ph";}
+  84% {content: "Pho|";}
+  86% {content: "Phot|";}
+  88% {content: "Photo|";}
+  90% {content: "Photog|";}
+  92% {content: "Photogr|";}
+  94% {content: "Photogra|";}
+  96% {content: "Photograph|";}
+  98% {content: "Photographer|";}
+  100% {content: "Photo|";}
+}
+
+/* End Home */
+
+
+/* Start About Me  */
+
+.about-contaner {
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+}
+.under-h {
+  position: relative;
+}
+.under-h::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 3px;
+  background-color: var(--main-color);
+  top: 120%;
+  left: 65px;
+  transform: translateX(-50%);
+}
+
+/* end About Me  */
+
+
+/* start Services  */
+
+.under-line {
+  height: 4px;
+  width: 40px;
+  background-color: var(--main-color);
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-container {
+  height: 100px;
+  width: 100px;
+  border: 7px solid var(--main-color);
+  transition: .7s;
+}
+.services-card:hover .icon-container {
+  background-color: var(--main-color);
+  border: 7px solid white;
+}
+.services-card .icon-container i {
+  color: #333;
+  transition: .7s;
+}
+.services-card:hover .icon-container i {
+  color: white;
+}
+
+/* end Services  */
+
+
+/* start under Services  */
+
+#bet-seshon {
+  background-image: linear-gradient(rgba(0, 119, 255, 0.636), rgba(0, 119, 255, 0.636)) ,url("../images/post-3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+@media (max-width:991px) {
+  #bet-seshon {
+    background-attachment: unset;
+  }
+}
+#bet-seshon .container {
+  padding: 200px 0px 200px 0px;
+}
+
+.plase .icon-container {
+  height: 120px;
+  width: 120px;
+  border: 10px solid white;
+}
+
+/* end under Services  */
+
+
+/* start portfolio  */
+
+#portfolio .icon-container {
+  width: 60px;
+  height: 60px;
+  border: 6px solid ;
+}
+.icon-sochal {
+  width: 60px;
+  height: 60px;
+  border: 6px solid ;
+}
+.cl-hov .hov-s {
+  transition: 1.2s;
+} 
+.cl-hov:hover .hov-s {
+  transform: scale(1.2);
+}
+
+/* start portfolio  */
+
+
+/* start under portfolio  */
+
+#bet-seshon.under-portfolio,
+#bet-seshon.contact {
+  background-image: linear-gradient(rgba(0, 119, 255, 0.636), rgba(0, 119, 255, 0.636)) ,url("../images/overlay-bg.jpg");
+}
+.carousel-indicators{
+  top: 90%;
+}
+.carousel-indicators .circ {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* end under portfolio  */
+
+
+/* start Blog  */
+
+.discription-contaner .buton {
+  transform: translate(-50%, -90%)
+}
+
+/* end Blog  */
+
+
+/* start contact me  */
+
+.i-cosh-cont {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: 4px solid var(--main-color);
+  transition: .7s;
+}
+.i-cosh-cont:hover {
+  color: #fff;
+}
+.i-cosh-cont:hover {
+  background-color: var(--main-color);
+  border: 4px solid #d2e3ff;
+}
+
+/* end contact me  */
+
+footer {
+  background-color: #0062D3;
+  box-shadow: 17px 14px 19px 20px rgba(0, 0, 0, 0.1);
+}
